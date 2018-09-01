@@ -56,7 +56,7 @@ public class OAuth extends Authentication {
     }
     
     private Map<String, Object> getRefreshTokenParams() {
-        Map<String, Object> params = new HashMap<>();
+        Map<String, Object> params = new HashMap<String, Object>();
         params.put("grant_type", "refresh_token");
         params.put("refresh_token", refreshToken);
         return params;
