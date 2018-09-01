@@ -226,7 +226,7 @@ public class ApiTest {
             return 593;
         }
         if ("List<Integer>".equals(type)) {
-            ArrayList<Integer> list = new ArrayList<>();
+            ArrayList<Integer> list = new ArrayList<Integer>();
             list.add(1);
             list.add(593);
             return list;

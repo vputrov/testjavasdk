@@ -637,7 +637,7 @@ public class ApiClient {
      */
     public RequestBody serialize(Object obj, String contentType, List<FileInfo> files) throws ApiException {
         if (files != null && files.size() > 0) {
-            Map<String, Object> parts = new LinkedHashMap<>();
+            Map<String, Object> parts = new LinkedHashMap<String, Object>();
             if (obj != null) {
                 parts.put("data", obj);
             }

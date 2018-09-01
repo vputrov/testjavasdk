@@ -47,7 +47,7 @@ public class OAuth extends Authentication {
     
     private Map<String, Object> getGrantCredentialsParams() {
         if (grantCredentialsParams == null) {
-            grantCredentialsParams = new HashMap<>();
+            grantCredentialsParams = new HashMap<String, Object>();
             grantCredentialsParams.put("grant_type", "client_credentials");
             grantCredentialsParams.put("client_id", appSid);
             grantCredentialsParams.put("client_secret", appKey);

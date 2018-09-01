@@ -67,7 +67,9 @@ public class AppKeyAuth extends Authentication {
                 signature = signature.substring(0, signature.length() - 1);
             }
             return URLEncoder.encode(signature, "UTF-8");
-        } catch (UnsupportedEncodingException | NoSuchAlgorithmException | InvalidKeyException e) {
+        } catch (UnsupportedEncodingException e) {
+        } catch (NoSuchAlgorithmException e) {
+        } catch (InvalidKeyException e) {
         }
         return null;
     }
